@@ -1,0 +1,20 @@
+--- commons-daemon-1.0.13-src/build.xml.orig	2013-02-06 19:15:58.000000000 +0100
++++ commons-daemon-1.0.13-src/build.xml	2013-02-28 22:47:19.866434128 +0100
+@@ -129,6 +129,9 @@
+   <!-- The test runner to execute -->
+   <property name="test.runner"             value="junit.textui.TestRunner"/>
+ 
++  <property name="j2se.javadoc"
++    value="http://java.sun.com/j2se/1.4/docs/api/"/>
++
+ 
+ <!-- ========== Executable Targets ======================================== -->
+ 
+@@ -217,6 +220,7 @@
+                  bottom="Copyright (c) 2002-2013 - Apache Software Foundation">
+       <classpath refid="compile.classpath"/>
+       <classpath location="${ant.lib}/ant.jar"/>
++      <link href="${j2se.javadoc}"/>
+     </javadoc>
+   </target>
+ 

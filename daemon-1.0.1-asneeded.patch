@@ -1,0 +1,11 @@
+--- commons-daemon-1.0.13-src/src/native/unix/native/Makefile.in.0001~	2013-02-28 22:48:26.436601887 +0100
++++ commons-daemon-1.0.13-src/src/native/unix/native/Makefile.in	2013-02-28 22:50:46.930845467 +0100
+@@ -38,7 +38,7 @@ libservice.a: $(OBJS)
+ 	$(RANLIB) libservice.a
+ 
+ jsvc: jsvc-unix.o libservice.a
+-	$(LDCMD) $(LDFLAGS) $(EXTRA_LDFLAGS) jsvc-unix.o libservice.a $(LIBS) -o ../jsvc
++	$(LDCMD) jsvc-unix.o libservice.a $(LDFLAGS) $(EXTRA_LDFLAGS) $(LIBS) -o ../jsvc
+ 	$(STRIP) ../jsvc
+ 
+ clean:
