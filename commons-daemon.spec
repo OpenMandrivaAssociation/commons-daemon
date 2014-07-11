@@ -1,6 +1,6 @@
 Name:           commons-daemon
 Version:        1.0.13
-Release:        6
+Release:        7
 Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
