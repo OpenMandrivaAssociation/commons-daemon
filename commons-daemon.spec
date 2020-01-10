@@ -44,7 +44,7 @@ Javadoc for %{name}.
 
 %prep
 %setup -q -n %name-%version-src
-%apply_patches
+%autopatch -p1
 chmod 644 src/samples/*
 
 
