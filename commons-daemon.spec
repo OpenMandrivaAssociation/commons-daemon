@@ -5,7 +5,7 @@ Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
 Group:          Development/Java
-URL:            http://commons.apache.org/proper/commons-daemon/
+URL:            https://commons.apache.org/proper/commons-daemon/
 Source0:        http://archive.apache.org/dist/commons/daemon/source/commons-daemon-%{version}-src.tar.gz
 Patch0:          %{name}-crosslink.patch
 Patch1:		 daemon-1.0.1-asneeded.patch
