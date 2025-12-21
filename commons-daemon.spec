@@ -10,6 +10,11 @@ Source0:        http://archive.apache.org/dist/commons/daemon/source/commons-dae
 Patch0:          %{name}-crosslink.patch
 Patch1:		 daemon-1.0.1-asneeded.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  ant java-javadoc
 BuildRequires:  java-rpmbuild >= 0:1.5
 BuildRequires:	java-1.6.0-openjdk-devel
